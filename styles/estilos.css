@@ -19,3 +19,7 @@ ul {
     /* crea unos pequeños espacios de padding */
     padding: 10px;
 }
+
+.logo {
+    height: 70px;
+}
