@@ -19,3 +19,19 @@ ul {
     /* crea unos pequeños espacios de padding */
     padding: 10px;
 }
+
+.mainButton {
+    background-color: blue;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+.mainButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 1px 1px black;
+}
