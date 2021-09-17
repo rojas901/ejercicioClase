@@ -1,0 +1,21 @@
+body {
+    /* Quito el margen por defecto */
+    margin: 0px;
+}
+
+ul {
+    /* hace que se quiten los bullets de la lista */
+    list-style: none;
+    /* Estas dos lineas las añado para quitar los estilos por defecto de padding y margin */
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    /* hace que la lista se vuelva horizontal */
+    display: flex;
+    /* Agrega un espacio entre los elementos */
+    justify-content: space-between;
+    /* crea unos pequeños espacios de padding */
+    padding: 10px;
+}
