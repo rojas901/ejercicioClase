@@ -20,10 +20,12 @@ ul {
     padding: 10px;
 }
 
+/* Disminuye el tamaño del logo */
 .logo {
     height: 70px;
 }
 
+/* Darle un formato general a la forma de los botones */
 .button {
     border: 0px;
     padding: 5px 10px;
@@ -31,22 +33,26 @@ ul {
     font-weight: bolder;
 }
 
+/* Se implementa para que salga una mano caundo el curso esta sobre el cursor, que se agrande y tenga sombra */
 .button:hover {
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 1px 1px black;
 }
 
+/* Modifica los colores del main buton */
 .mainButton {
     background-color: blue;
     color: white;        
 }
 
+/* Modifica los colores del secondary boton */
 .secondaryButton {
     background-color: azure;
     color:blue;
 }
 
+/* Se implementa para que todo lo que encierra el div que de rodeado tanto icono como input */
 .buscar {
     background-color: white;
     border: 1px solid gray;
@@ -54,10 +60,12 @@ ul {
     border-radius: 8px;
 }
 
+/* Se implementa para que al dar click en cuadro de busqueda se ponga el borde azul */
 .buscar:focus-within {
     border: 1px solid blue;
 }
 
+/* Se implementa para los inputs dentro del div buscar para quitar bordes */
 .buscar > input {
     outline: none;
     border: 0px;
