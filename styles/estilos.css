@@ -11,6 +11,10 @@ ul {
     margin: 0px;
 }
 
+h1 {
+    text-align: center;
+}
+
 .navbar {
     /* hace que la lista se vuelva horizontal */
     display: flex;
@@ -109,7 +113,8 @@ ul {
 
 /* Hago que la lista se ponga horizontal */
 .contenedorCard {
-    display: flex;    
+    display: flex;
+    justify-content: space-between;    
 }
 
 /* Hago que cada imagen tenga un espacio */
@@ -131,5 +136,22 @@ ul {
 /* Cuando paso el cursor sobre la card se pone mas grande */
 .card:hover {
     transform: scale(1.02);
+}
+
+/* ul contenedor de iconos para que se vuelva horizontal */
+.contenedorIconos {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* para que el corazon se ponga rojo */
+.colorCorazon {
+    color:red;
 }
 
