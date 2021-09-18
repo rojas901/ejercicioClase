@@ -95,20 +95,41 @@ ul {
     width: 350px;
     height: 240px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 /* Hago que la foto se ajuste al contenedor */
 .contenedorImagen > img {
-    object-fit: contain;
+    object-fit: fill;
     /* esta instuccion me ayuda a que la foto no exceda el tamaño del contenedor */
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+/* Hago que la lista se ponga horizontal */
 .contenedorCard {
-    display: flex;
+    display: flex;    
 }
 
+/* Hago que cada imagen tenga un espacio */
 .card {
-    padding: 10px;
+    margin: 10px;
+    background-color: rgb(26, 38, 207);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;    
+}
+
+/* Hago que el titulo se ponga blanco */
+.cardTitle{
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/* Cuando paso el cursor sobre la card se pone mas grande */
+.card:hover {
+    transform: scale(1.02);
 }
 
