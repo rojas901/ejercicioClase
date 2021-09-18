@@ -85,6 +85,30 @@ ul {
     border: 0px;
 }
 
+/* Se le agrega color azul al pasar por encima de icono busqueda */
 .iconoBusqueda:hover {
     color:blue;
 }
+
+/* Creo un contenedor para la imagen */
+.contenedorImagen {
+    width: 350px;
+    height: 240px;
+    display: flex;
+}
+
+/* Hago que la foto se ajuste al contenedor */
+.contenedorImagen > img {
+    object-fit: contain;
+    /* esta instuccion me ayuda a que la foto no exceda el tamaño del contenedor */
+    width: 100%;
+}
+
+.contenedorCard {
+    display: flex;
+}
+
+.card {
+    padding: 10px;
+}
+
