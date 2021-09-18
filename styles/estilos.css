@@ -18,11 +18,22 @@ ul {
     justify-content: space-between;
     /* crea unos pequeños espacios de padding */
     padding: 10px;
+    /* agregar borde para separar secciones*/
+    border-bottom: 2px solid gray;
+    /* Agrego una sombra */
+    box-shadow: 1px 1px black;
+}
+
+/* logro que todos los li queden centrados */
+.navbar > li {
+    display: flex;
+    align-items: center;
 }
 
 /* Disminuye el tamaño del logo */
 .logo {
     height: 70px;
+    background-color: aqua;
 }
 
 /* Darle un formato general a la forma de los botones */
@@ -58,6 +69,9 @@ ul {
     border: 1px solid gray;
     padding: 4px;
     border-radius: 8px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Se implementa para que al dar click en cuadro de busqueda se ponga el borde azul */
@@ -69,4 +83,8 @@ ul {
 .buscar > input {
     outline: none;
     border: 0px;
+}
+
+.iconoBusqueda:hover {
+    color:blue;
 }
