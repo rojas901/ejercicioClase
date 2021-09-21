@@ -1,0 +1,158 @@
+body {
+  /* Quito el margen por defecto */
+  margin: 0px;
+}
+
+ul {
+  /* hace que se quiten los bullets de la lista */
+  list-style: none;
+  /* Estas dos lineas las añado para quitar los estilos por defecto de padding y margin */
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  /* hace que la lista se vuelva horizontal */
+  display: flex;
+  /* Agrega un espacio entre los elementos */
+  justify-content: space-between;
+  /* crea unos pequeños espacios de padding */
+  padding: 10px;
+  /* agregar borde para separar secciones*/
+  border-bottom: 2px solid gray;
+  /* Agrego una sombra */
+  box-shadow: 1px 1px black;
+}
+
+/* logro que todos los li queden centrados */
+.navbar > li {
+  display: flex;
+  align-items: center;
+}
+
+/* Disminuye el tamaño del logo */
+.logo {
+  height: 70px;
+  background-color: aqua;
+}
+
+/* Darle un formato general a la forma de los botones */
+.button {
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+/* Se implementa para que salga una mano caundo el curso esta sobre el cursor, que se agrande y tenga sombra */
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 1px 1px black;
+}
+
+/* Modifica los colores del main buton */
+.mainButton {
+  background-color: blue;
+  color: white;        
+}
+
+/* Modifica los colores del secondary boton */
+.secondaryButton {
+  background-color: azure;
+  color:blue;
+}
+
+/* Se implementa para que todo lo que encierra el div que de rodeado tanto icono como input */
+.buscar {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Se implementa para que al dar click en cuadro de busqueda se ponga el borde azul */
+.buscar:focus-within {
+  border: 1px solid blue;
+}
+
+/* Se implementa para los inputs dentro del div buscar para quitar bordes */
+.buscar > input {
+  outline: none;
+  border: 0px;
+}
+
+/* Se le agrega color azul al pasar por encima de icono busqueda */
+.iconoBusqueda:hover {
+  color:blue;
+}
+
+/* Creo un contenedor para la imagen */
+.contenedorImagen {
+  width: 350px;
+  height: 240px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Hago que la foto se ajuste al contenedor */
+.contenedorImagen > img {
+  object-fit: fill;
+  /* esta instuccion me ayuda a que la foto no exceda el tamaño del contenedor */
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Hago que la lista se ponga horizontal */
+.contenedorCard {
+  display: flex;
+  justify-content: space-between;    
+}
+
+/* Hago que cada imagen tenga un espacio */
+.card {
+  margin: 10px;
+  background-color: rgb(26, 38, 207);
+  box-shadow: 2px 2px 2px black;
+  border-radius: 10px;    
+}
+
+/* Hago que el titulo se ponga blanco */
+.cardTitle{
+  color: white;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+/* Cuando paso el cursor sobre la card se pone mas grande */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* ul contenedor de iconos para que se vuelva horizontal */
+.contenedorIconos {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  color: white;
+}
+
+/* para que el corazon se ponga rojo */
+.colorCorazon {
+  color:red;
+}
+
+
