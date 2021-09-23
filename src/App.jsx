@@ -1,8 +1,9 @@
-import './styles/styles.css';
-import logob from './media/logob.jpg'
-import v50 from './media/v1950.jpg'
-import v61 from './media/v1961.jpg'
-import v20 from './media/v2020.jpg'
+import CardCarros from 'components/CardCarros';
+import 'styles/styles.css';
+import logob from 'media/logob.jpg'
+import v50 from 'media/v1950.jpg'
+import v61 from 'media/v1961.jpg'
+import v20 from 'media/v2020.jpg'
 
 function App() {
   return (
@@ -43,33 +44,6 @@ function App() {
         <footer></footer>       
     </div>
   );
-}
-
-function CardCarros({nombreModelo, imagen, like, comentario, vista}) {
-    return (
-        <li className="card">
-            <div className="contenedorImagen">
-                <img src={imagen} alt={nombreModelo}/>
-            </div> 
-            <span className = "cardTitle">{nombreModelo}</span>
-            <div>
-                <ul className="contenedorIconos">
-                    <li>
-                        <i className="fas fa-heart colorCorazon"></i>
-                        <span>{like}</span>
-                    </li>
-                    <li>
-                        <i className="fas fa-comment"></i>
-                        <span>{comentario}</span>
-                    </li>
-                    <li>
-                        <i className="fas fa-eye"></i>
-                        <span>{vista}</span>
-                    </li>
-                </ul>
-            </div>             
-        </li>
-    );
 }
 
 export default App;
