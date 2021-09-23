@@ -1,9 +1,11 @@
+import {Link} from 'react-router-dom';
+
 function CardCarros({nombreModelo, imagen, like, comentario, vista}) {
-    return (
-        <li className="card">
+    return (        
+        <li className="card">            
             <div className="contenedorImagen">
                 <img src={imagen} alt={nombreModelo}/>
-            </div> 
+            </div>            
             <span className = "cardTitle">{nombreModelo}</span>
             <div>
                 <ul className="contenedorIconos">
@@ -20,8 +22,8 @@ function CardCarros({nombreModelo, imagen, like, comentario, vista}) {
                         <span>{vista}</span>
                     </li>
                 </ul>
-            </div>             
-        </li>
+            </div>                        
+        </li>        
     );
 }
 
