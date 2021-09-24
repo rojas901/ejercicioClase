@@ -34,18 +34,21 @@ function Index() {
                 <section>
                     <h1>Modelos de escarabajo</h1>
                     <ul className="contenedorCard">
-                        <Link to='/modelo60'>
-                            <CardCarros nombreModelo='Modelo 1950' imagen={v50} like='50' comentario='200' vista='500'/>
-                        </Link>                        
-                        <CardCarros nombreModelo='Modelo 1960' imagen={v61} like='100' comentario='120' vista='800'/>
-                        <CardCarros nombreModelo='Modelo 2020' imagen={v20} like='320' comentario='400' vista='600'/>
+                        <Link to='/modelo50' className="Link">
+                            <CardCarros nombreModelo='Modelo 1950' imagen={v50} like='60' comentario='200' vista='500'/>
+                        </Link>
+                        <Link to='/modelo60' className="Link">
+                            <CardCarros nombreModelo='Modelo 1960' imagen={v61} like='100' comentario='120' vista='800'/>
+                        </Link>
+                        <Link to='/modelo2020' className="Link">
+                            <CardCarros nombreModelo='Modelo 1960' imagen={v20} like='300' comentario='170' vista='510'/>
+                        </Link>
                     </ul>
                 </section>
                 <section></section>
             </main>
             <footer></footer>
-        </div>
- 
+        </div> 
     );
 }
 

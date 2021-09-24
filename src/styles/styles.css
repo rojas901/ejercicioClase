@@ -15,6 +15,10 @@ h1 {
   text-align: center;
 }
 
+.Link {
+  text-decoration: none;
+}
+
 .navbar {
   /* hace que la lista se vuelva horizontal */
   display: flex;
