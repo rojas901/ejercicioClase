@@ -2,9 +2,9 @@ import React from 'react'
 
 const Modelo50 = () => {
     return (
-        <div>
-           Esta pagina es de info modelo50 
-        </div>
+        
+        <div>Informacion modelo 50</div>
+        
     )
 }
 
